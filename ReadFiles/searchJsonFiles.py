@@ -1,6 +1,6 @@
 import json
 
-with open("json_data.json") as json_file:
+with open("data.json") as json_file:
     json_data = json.load(json_file)
 
 userId = int(input("Enter your id: ")) - 1

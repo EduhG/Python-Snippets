@@ -2,7 +2,7 @@
 
 userName = raw_input("Enter your user name: ")
 
-fo = open("names.txt", "r+")
+fo = open("data.txt", "r+")
 
 myName = fo.readlines()
 notInFile = 1

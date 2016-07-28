@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 userName = raw_input("Enter your user name: ")
 
 fo = open("data.txt", "r+")
@@ -9,13 +7,10 @@ notInFile = 1
 
 if len(myName) > 0:
     for name in myName:
-        print(name)
-        if name != userName:
+        if name.replace('\n', '') != userName:
             notInFile = 1
-            #break
         else:
             notInFile = 0
-            #break
 else:
     notInFile = 1
 
